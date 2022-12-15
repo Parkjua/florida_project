@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Project</title>
+    <!-- css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/common_test.css" rel="stylesheet">
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/59b51e96a0.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu_wrap">
+            <div class="menu">
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="index.html">Home</a></li>
+                    <li class="menu_item"><a href="actor.html">Actor</a></li>
+                    <li class="menu_item"><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="hambuger">
+                <span class="hambuger_line"></span>
+                <span class="hambuger_line"></span>
+                <span class="hambuger_line"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="main_container">
+            <div class="title_all">
+                <h1 class="title title_ani1">the</h1>
+                <h2 class="title title_ani2">Florida</h2>
+                <h3 class="title title_ani3">Project</h3>
+                <h4 class="title title_ani4">By.Sean Baker</h4>
+            </div>
+            <div class="svg_wrapper">
+                <svg height="86" width="186">
+                    <ellipse class="shape" style="transform:translate(50%, 50%)" cx="0" cy="0" rx="92" ry="42"
+                        fill="none" stroke-width="1" stroke="white" stroke-dasharray="484" stroke-dashoffset="0">
+                    </ellipse>
+                </svg>
+                <div class="svg_text">play</div>
+            </div>
+            <div class="video_ani">
+                <div id="main_video">
+                    <div class="player">
+                        <video class="player_video viewer" id="video_obj" src="./img/video_1.mov"></video>
+                        <div class="player_controls">
+                            <button class="player_button toggle" title="Toggle Play">▷</button>
+                            <div class="progress">
+                                <div class="bar"></div>
+                                <div class="bar2"></div>
+                            </div>
+                            <button data-skip="-5" class="player_button left_arrow"><i
+                                    class="fa-solid fa-forward"></i></button>
+                            <button data-skip="5" class="player_button right_arrow"><i
+                                    class="fa-solid fa-forward"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- partial -->
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

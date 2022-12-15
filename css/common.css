@@ -1,0 +1,115 @@
+/* header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  border: solid 1px #0b0730;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul#gnbMenu {
+  display: flex;
+} */
+
+.wrap {
+  width: calc(100vw * 1680 / 1920);
+  margin: 0 auto;
+}
+/* 햄버거 메뉴 */
+header {
+  position: absolute;
+  right: 0;
+  padding: calc(100vw * 30 / 1920) calc(100vw * 30 / 1920);
+  border: solid 1px red;
+}
+#menu_box {
+  display: none;
+}
+#menu_box + label {
+  position: relative;
+  display: block;
+  width: calc(100vw * 60 / 1920);
+  height: calc(100vw * 40 / 1920);
+  cursor: pointer;
+  z-index: 2;
+}
+#menu_box + label > span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: calc(100vw * 8 / 1920);
+  border-radius: calc(100vw * 10 / 1920);
+  background: #c38bff;
+  transition: all 0.5s;
+}
+#menu_box:checked + label > span:nth-child(1) {
+  top: 50%;
+  transform: translate(0, -50%);
+  transform: rotate(45deg);
+}
+#menu_box + label > span:nth-child(2) {
+  top: 50%;
+  background: #faa6a6;
+  transform: translate(0, -50%);
+}
+
+#menu_box:checked + label > span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu_box + label > span:nth-child(3) {
+  bottom: 0;
+}
+
+#menu_box:checked + label > span:nth-child(3) {
+  top: 50%;
+  transform: translate(0, -50%);
+  transform: rotate(-45deg);
+}
+#gnb_menu {
+  position: fixed;
+  top: 0;
+  right: calc(100vw * -1920 / 1920);
+  width: 100%;
+  height: 100%;
+  background-color: #faa6a6;
+  opacity: 0;
+  transition: all 300ms;
+  box-sizing: border-box;
+  z-index: 1;
+}
+#menu_box:checked + label + #gnb_menu {
+  right: 0;
+  opacity: 0.9;
+  border: solid 1px red;
+}
+#gnb_menu ul {
+  text-align: center;
+  padding: calc(100vw * 30 / 1920) calc(100vw * 30 / 1920);
+  border: solid 1px red;
+}
+#main_container {
+  background-image: url("../img/main.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -999;
+  /* background-position: center; */
+}
+button {
+  width: 100px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#section2 {
+  height: 1080px;
+  background: #c38bff;
+  transition: all 1s linear;
+}
+#section2.active {
+  top: 0;
+}

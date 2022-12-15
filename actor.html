@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Project</title>
+    <!-- css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/common_test.css" rel="stylesheet">
+    <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="actor_header" data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+            <header>
+                <div class="menu_wrap">
+                    <div class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_item"><a href="index.html">Home</a></li>
+                            <li class="menu_item"><a href="actor.html">Actor</a></li>
+                            <li class="menu_item"><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="hambuger">
+                        <span class="hambuger_line"></span>
+                        <span class="hambuger_line"></span>
+                        <span class="hambuger_line"></span>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="mobile_section">
+            <div id="link_section" class="nav-section">
+                <a href="#moonee">Moonee</a>
+                <a href="#halley">Halley</a>
+                <a href="#">Bobby</a>
+            </div>
+
+            <div id="nav-contact-section" class="nav-section">
+                <a href="#">Florida Project</a>
+            </div>
+        </div>
+    </nav>
+    <main id="actor_main">
+        <!-- 무니 섹션 -->
+        <article id="moonee" data-index="0" data-status="active">
+            <div class="image_section article_section"></div>
+            <div class="description_section article_section">
+                <p>무니는 디즈니월드 근처에 사는 6살 아이이다.
+                    무니가 거주하는 곳은 옆 동네와는 달리 놀이터가 없지만 친구와 함께라면 사방이 놀이터라고 생각한다.
+                    문제 많은 엄마랑 쪽방 모텔에 살면서 환상의 세계를 찾아낸 꼬마의 이야기이다.
+                </p>
+                <p>Mooney is a 6-year-old who lives near Disney World. Unlike the neighborhood where Mooney lives, there
+                    are no playgrounds, but when he is with his friends, he thinks that everywhere is a playground. It
+                    is the story of a little boy who finds a world of fantasy while living in a motel with a troubled
+                    mother.
+                </p>
+            </div>
+            <div class="title_section article_section">
+                <h1>actor</h1>
+                <h2>Brooklynn Prince / Moonee</h2>
+            </div>
+            <div class="nav_section article_section">
+                <button class="nav_button" type="button" onclick="handleLeftClick()">←
+                    <button class="nav_button" type="button" onclick="handleRightClick()">
+                        →
+                    </button>
+            </div>
+        </article>
+        <!-- 핼리 섹션 -->
+        <article id="halley" data-index="1" data-status="inactive">
+            <div class="image_section article_section"></div>
+            <div class="description_section article_section">
+                <p>핼리는 직업을 제대로 구하지 못하여 생활고에 시달린다.<br />
+                    그녀는 집을 구하지 못하고 모텔을 돌아다니며 살아가는 '히든 홈리스'이다.
+                    핼리는 세상에서 자신의 딸인 무니에게 사랑으로 대하지만 부모로의 역할은 부족하다.
+                </p>
+                <p>
+                    haellineun jig-eob-eul jedaelo guhaji moshayeo saenghwalgo-e sidallinda
+                    geunyeoneun jib-eul guhaji moshago motel-eul dol-adanimyeo sal-aganeun 'hideun homliseu'ida.
+                    haellineun sesang-eseo jasin-ui ttal-in muniege salang-eulo daehajiman bumoloui yeoghal-eun
+                    bujoghada.
+                    Halley struggles with life because he can't find a job.
+                    She is a 'hidden homeless' living in motels without being able to find a house.
+                    Halley treats his daughter, Mooney, with love in the world, but her role as a parent is
+                    insufficient.</p>
+            </div>
+            <div class="title_section article_section">
+                <h1>actor</h1>
+                <h2>Bria Vinaite / Halley</h2>
+            </div>
+            <div class="nav_section article_section">
+                <button class="nav_button" type="button" onclick="handleLeftClick()">←
+                    <button class="nav_button" type="button" onclick="handleRightClick()">
+                        →
+                    </button>
+            </div>
+        </article>
+        <article data-index="2" data-status="inactive">
+            <div class="image_section article_section"></div>
+            <div class="description_section article_section">
+                <p>바비는 모텔 관리인으로 무심한듯 보이지만 아이들을 뒤에서 보살펴주는 아빠같은 존재이다.
+                    핼리와 무니에게 일어나는 모든 일을 관리해준다. </p>
+                <p>
+                    Bobby seems indifferent as a motel manager, but he is like a father who takes care of the children
+                    behind the scenes.
+                    He manages everything that happens to Halley and Mooney.</p>
+            </div>
+            <div class="title_section article_section">
+                <h1>actor</h1>
+                <h2>Willem Dafoe / Bobby</h2>
+            </div>
+            <div class="nav_section article_section">
+                <button class="nav_button" type="button" onclick="handleLeftClick()">←
+                    <button class="nav_button" type="button" onclick="handleRightClick()">
+                        →
+                    </button>
+            </div>
+            </div>
+        </article>
+    </main>
+    <!-- partial -->
+    <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/actor.js"></script>
+</body>
+
+</html>
